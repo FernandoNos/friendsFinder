@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/index',function(req,res,next){
-	res.sendFile('../views/index.dust');
+	res.render('index', { title: 'Hey', message: 'Hello there!' })
 });
 
 module.exports = router;
